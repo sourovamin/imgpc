@@ -47,7 +47,7 @@ class ImgPx:
         except Exception:
             pass
 
-    def resize(self, width, height, des_folder = "Resized", aspect_ratio = True, des_format = None):
+    def resize(self, width, height, aspect_ratio = True, des_format = None, des_folder = "Resized"):
         self.createFolder(des_folder)
         for file in os.listdir(self.path):
             file_path = os.path.join(self.path, file)
